@@ -1,0 +1,541 @@
+/* -- ESTILOS GENERALES -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Playfair', serif;
+  font-size: 1.6rem;
+}
+
+.container-fixed {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section-header {
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* -- HEADER -- */
+
+header h1 {
+  font-size: 5.7rem;
+  text-align: center;
+  height: 10rem;
+  font-weight: 900;
+  margin-top: 6.5rem;
+}
+
+header span {
+  color: #037bc0;
+}
+
+header nav {
+  font-family: 'Raleway', sans-serif;
+  border-top: 1px solid #e1e1e1;
+  height: 7.3rem;
+}
+
+header nav ul {
+  height: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------ ESTILOS INICIO ------ */
+
+.container-img {
+  width: 100%;
+}
+
+.container-img img {
+  width: 100%;
+  height: 55.5rem;
+  object-fit: cover;
+}
+
+/* Categoria Productos */
+
+.category {
+  height: 53.7rem;
+  padding-top: 5rem;
+}
+
+.category-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-products div a {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 3rem;
+  border-radius: 0 0 1rem 0;
+}
+
+.category-products div a:hover {
+  background-color: #037bc0;
+  color: #fff;
+}
+
+/* Sobre Nosotros */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about div img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-txt {
+  background-color: #037bc0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7rem;
+}
+
+.about-txt h2 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.about-txt p {
+  padding-top: 4rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 3.2rem;
+}
+
+/* Nuestro Productos */
+.ourProducts {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.productFirstR {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 45rem;
+  overflow: hidden;
+}
+
+.product1-img {
+  /*  display: flex;
+  align-items: center;*/
+  height: 45rem;
+}
+
+.productFirstR div img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.productFirstR-txt,
+.productSecondR-txt,
+.productThirdR-txt {
+  background-color: #037bc0;
+  color: #fff;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.productFirstR-txt header,
+.productSecondR-txt header,
+.productThirdR-txt header {
+  font-size: 3.2rem;
+  padding-bottom: 1.7rem;
+}
+
+.productFirstR-txt h3,
+.productSecondR-txt h3,
+.productThirdR-txt h3 {
+  font-weight: 800;
+}
+
+.productFirstR-txt p,
+.productSecondR-txt p,
+.productThirdR-txt p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 3rem;
+}
+
+.productFirstR-txt p:nth-child(3),
+.productSecondR-txt p:nth-child(3),
+.productThirdR-txt p:nth-child(3) {
+  font-size: 2.7rem;
+  font-weight: 800;
+  padding: 1.5rem 0;
+}
+
+.productFirstR-txt button,
+.productSecondR-txt button,
+.productThirdR-txt button {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  background-color: #8cbc00;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+article button:hover {
+  background-color: #769c02;
+  cursor: pointer;
+}
+
+.productSecondR {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.productSecondR article {
+  overflow: hidden;
+}
+
+.product2-img {
+  height: 30rem;
+}
+
+.productSecondR article img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.productSecondR-txt {
+  height: 27rem;
+  text-align: center;
+}
+
+.productThirdR {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.productThirdR article {
+  overflow: hidden;
+}
+
+.productThirdR article img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------ ESTILOS NOSOTROS ------ */
+
+.container-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.container-nosotros img {
+  height: 100%;
+}
+
+.nosotros-txt {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nosotros-txt p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 3rem;
+}
+
+.nosotros-txt p:nth-child(2) {
+  padding-top: 3rem;
+}
+
+/* ------ ESTILOS TIENDA ------ */
+
+.container-tienda {
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.container-tienda h2 {
+  margin-bottom: 3rem;
+}
+
+/* ------ ESTILOS BLOG ------ */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.container-blog section {
+  padding-bottom: 6rem;
+}
+
+.header-blog {
+  padding: 5rem 0;
+}
+
+.blog-article {
+  text-align: start;
+  padding-bottom: 3rem;
+}
+
+.container-detalle {
+  width: 93%;
+  margin: auto;
+  padding: 4rem 0 6rem 0;
+}
+
+.blog-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-info,
+.blog-txt {
+  font-family: 'Raleway', sans-serif;
+}
+
+.info-detalle {
+  font-weight: 700;
+  padding-bottom: 3.5rem;
+}
+
+.info-detalle span {
+  color: #037bc0;
+}
+
+.blog-txt {
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.blog-txt p:nth-child(2) {
+  padding-top: 2rem;
+}
+
+.container-blog button {
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #8cbc00;
+  font-weight: 800;
+  color: #fff;
+}
+
+.container-blog article:nth-child(2) {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 3rem;
+}
+
+.container-blog aside {
+  padding-left: 4rem;
+}
+
+.container-blog aside h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.aside-links {
+  padding: 3rem 0 0 3rem;
+}
+
+.aside-links ul li {
+  padding-bottom: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ------ ESTILOS GALERIA ------ */
+
+.container-galeria {
+  padding: 6rem 0 4rem 0;
+}
+
+.container-galeria h2 {
+  padding-bottom: 3rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria-grid div a img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+/* ------ ESTILOS CONTACTO ------ */
+
+.container-contact {
+  padding-top: 5rem;
+}
+
+.container-fixed form {
+  width: 60rem;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+.container-fixed form fieldset {
+  margin-top: 2rem;
+}
+
+form legend {
+  background-color: #005485;
+  width: 97%;
+  height: 5.2rem;
+  margin: 0 auto;
+  font-weight: 900;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.datos-inputs,
+.info-radio {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.datos-inputs input,
+.datos-inputs textarea,
+.datos-inputs select {
+  height: 3.7rem;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+}
+
+.datos-inputs input::placeholder {
+  padding-left: 1rem;
+}
+
+.datos-inputs textarea {
+  height: 17.5rem;
+}
+
+.datos-inputs label {
+  width: 11.5rem;
+  padding-right: 3rem;
+}
+
+.info-radio label {
+  width: 10.3rem;
+}
+
+.info-cat label {
+  width: 12rem;
+  padding-right: 0;
+}
+
+.info-cat input {
+  height: 6.4rem;
+}
+
+.container-fixed form button {
+  background-color: #8cbc00;
+  border: none;
+  color: #fff;
+  width: 20rem;
+  height: 4rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.container-fixed form button:hover {
+  background-color: #769c02;
+  cursor: pointer;
+}
+
+.container-fixed form {
+  padding: 1rem 0 5rem 0;
+}
+
+/* ------ FOOTER ------- */
+footer {
+  /* height: 35.8rem;*/
+  border-top: 1px solid #e1e1e1;
+  padding-top: 4.5rem;
+}
+
+.container-footer {
+  height: 22.5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-footer section h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.container-footer section ul li {
+  margin-top: 1.3rem;
+}
+
+.container-footer section ul li a {
+  font-family: 'Raleway', sans-serif;
+}
+
+.copyright {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 4.5rem;
+}

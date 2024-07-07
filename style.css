@@ -266,6 +266,10 @@ article button:hover {
 
 /* ------ ESTILOS NOSOTROS ------ */
 
+.title-nosotros {
+  padding-top: 5rem;
+}
+
 .container-nosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
